@@ -81,14 +81,14 @@ Building an SEO-optimized architecture with clean UX/UI
 
 ## ⚙️ Deployment Instructions
 
-# Build the project
+### Build the project
 npm install
 npm run build
 
-# Deploy to S3
+### Deploy to S3
 aws s3 sync dist/ s3://beardbrosvending.com --delete
 
-# Invalidate CloudFront cache (if needed)
+### Invalidate CloudFront cache (if needed)
 aws cloudfront create-invalidation --distribution-id YOUR_DISTRIBUTION_ID --paths "/*"
 
 ### ✨ Credits
